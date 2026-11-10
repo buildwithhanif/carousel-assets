@@ -1,0 +1,265 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+.hi{--bg:#F3F1EC;--ink:#1D1D1F;--soft:#4A4A50;--rose:#A63D5C;--rose2:#8E3150;--blush:#F4C7D3;--card:#FFFFFF;--line:rgba(29,29,31,.10);--sage:#E6EAE1;
+font-family:"Figtree","Avenir Next",system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.55;-webkit-font-smoothing:antialiased;overflow:hidden}
+.hi *{box-sizing:border-box;margin:0;padding:0}
+.hi img{max-width:100%;display:block}
+.hi .w{max-width:1080px;margin:0 auto;padding:0 20px}
+.hi .k{font-size:13px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--rose)}
+.hi h1{font-weight:900;font-size:clamp(38px,8.4vw,66px);line-height:1.02;letter-spacing:-.02em;margin-top:14px}
+.hi h2{font-weight:900;font-size:clamp(28px,5.6vw,42px);line-height:1.08;letter-spacing:-.015em}
+.hi mark{background:var(--blush);color:inherit;padding:0 .12em;border-radius:4px}
+.hi p{font-size:17px;color:var(--soft)}
+.hi .btn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;max-width:420px;background:var(--rose);color:#fff;text-decoration:none;font-weight:800;font-size:18px;padding:18px 26px;border-radius:999px;box-shadow:0 14px 30px -12px rgba(166,61,92,.6);transition:transform .15s,background .15s}
+.hi .btn:hover{background:var(--rose2);transform:translateY(-1px)}
+.hi .btn span{font-weight:600;opacity:.9;font-size:15px}
+.hi .price{display:flex;align-items:baseline;gap:12px;margin:24px 0 16px}
+.hi .price b{font-size:40px;font-weight:900;letter-spacing:-.02em}
+.hi .price s{font-size:19px;color:#8B8B8F}
+.hi .tag{display:inline-block;background:var(--ink);color:#fff;font-size:12px;font-weight:800;letter-spacing:.06em;padding:5px 10px;border-radius:999px;text-transform:uppercase}
+.hi .note{font-size:14px;color:#6b6b70;margin-top:12px}
+.hi section{padding:64px 0}
+.hi .hero{padding:36px 0 40px}
+.hi .hero .grid{display:grid;gap:28px}
+.hi .hero .art{border-radius:22px;overflow:hidden;box-shadow:0 30px 60px -30px rgba(60,20,35,.35)}
+.hi .hero p.lead{font-size:19px;margin-top:16px;color:var(--soft)}
+.hi .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.hi .chips span{background:#fff;border:1.5px solid #E8DFE2;color:var(--rose);font-weight:700;font-size:14px;padding:7px 14px;border-radius:999px}
+.hi .pain{background:#fff}
+.hi .cards{display:grid;gap:14px;margin-top:26px}
+.hi .c{background:var(--bg);border-radius:18px;padding:22px 22px;border:1px solid var(--line)}
+.hi .c b{display:block;font-size:18px;font-weight:800;color:var(--ink);margin-bottom:6px}
+.hi .c p{font-size:16px}
+.hi .turn{margin-top:26px;font-size:19px;color:var(--ink);font-weight:600}
+.hi .list{counter-reset:n;display:grid;gap:10px;margin-top:26px}
+.hi .list li{list-style:none;counter-increment:n;display:flex;gap:14px;align-items:flex-start;background:#fff;border-radius:14px;padding:14px 16px;border:1px solid var(--line);font-size:16.5px;font-weight:600}
+.hi .list li:before{content:counter(n,decimal-leading-zero);font-weight:900;color:var(--rose);font-size:15px;min-width:24px;padding-top:2px}
+.hi .list li small{display:block;font-weight:500;color:#6b6b70;font-size:14.5px;margin-top:2px}
+.hi .shots{display:grid;gap:18px;margin-top:28px}
+.hi .shot{background:#fff;border-radius:20px;overflow:hidden;border:1px solid var(--line)}
+.hi .shot div{padding:16px 18px 20px}
+.hi .shot b{font-size:17px;font-weight:800}
+.hi .shot p{font-size:15px;margin-top:4px}
+.hi .anat{display:grid;gap:12px;margin-top:26px}
+.hi .an{display:flex;gap:14px;background:#fff;border-radius:16px;padding:18px;border:1px solid var(--line)}
+.hi .an i{font-style:normal;flex:0 0 34px;height:34px;border-radius:10px;background:var(--blush);color:var(--rose);font-weight:900;display:flex;align-items:center;justify-content:center}
+.hi .an b{display:block;font-weight:800;font-size:17px}
+.hi .an p{font-size:15.5px}
+.hi .chat{margin-top:22px;background:var(--sage);border-radius:20px;padding:20px}
+.hi .chat .lab{font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#5d6b58;margin-bottom:12px}
+.hi .bub{background:#fff;border-radius:16px 16px 16px 4px;padding:12px 16px;font-size:16px;color:var(--ink);max-width:92%;margin-bottom:10px;box-shadow:0 1px 0 rgba(0,0,0,.04)}
+.hi .get{display:grid;gap:12px;margin-top:26px}
+.hi .g{display:flex;gap:14px;align-items:flex-start;background:#fff;border-radius:16px;padding:18px;border:1px solid var(--line)}
+.hi .g .n{flex:0 0 44px;height:44px;border-radius:12px;background:var(--rose);color:#fff;font-weight:900;font-size:13px;display:flex;align-items:center;justify-content:center;letter-spacing:.04em}
+.hi .g b{display:block;font-weight:800;font-size:17px}
+.hi .g p{font-size:15.5px}
+.hi .two{display:grid;gap:14px;margin-top:26px}
+.hi .box{border-radius:18px;padding:22px}
+.hi .box.yes{background:#fff;border:1.5px solid var(--blush)}
+.hi .box.no{background:transparent;border:1.5px dashed #cfc7ca}
+.hi .box b{display:block;font-weight:800;font-size:17px;margin-bottom:10px}
+.hi .box ul{padding-left:18px}
+.hi .box li{font-size:15.5px;color:var(--soft);margin:6px 0}
+.hi .offer{background:var(--ink);color:#fff;border-radius:26px;padding:30px 24px;margin-top:6px}
+.hi .offer h2{color:#fff}
+.hi .offer p{color:#d8d8dc}
+.hi .offer .price s{color:#9a9aa0}
+.hi .offer ul{list-style:none;margin:18px 0 6px;display:grid;gap:9px}
+.hi .offer li{display:flex;gap:10px;font-size:16px;color:#d8d8dc}
+.hi .offer li b{color:#fff;font-weight:800}
+.hi .offer li:before{content:"";flex:0 0 18px;height:18px;margin-top:3px;border-radius:50%;background:var(--rose) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='white'%3E%3Cpath d='M8.2 13.6 4.8 10.2l1.2-1.2 2.2 2.2 5.8-5.8 1.2 1.2z'/%3E%3C/svg%3E") center/14px no-repeat}
+.hi .offer .btn{max-width:none;margin-top:18px}
+.hi .faq{display:grid;gap:10px;margin-top:24px}
+.hi details{background:#fff;border-radius:16px;border:1px solid var(--line);padding:16px 18px}
+.hi summary{cursor:pointer;font-weight:800;font-size:16.5px;list-style:none;display:flex;justify-content:space-between;gap:14px}
+.hi summary::-webkit-details-marker{display:none}
+.hi summary:after{content:"+";color:var(--rose);font-weight:900;font-size:22px;line-height:1}
+.hi details[open] summary:after{content:"\2212"}
+.hi details p{margin-top:10px;font-size:15.5px}
+.hi .author{display:grid;gap:18px;align-items:center;background:#fff;border-radius:22px;padding:22px;border:1px solid var(--line)}
+.hi .author img{border-radius:16px}
+.hi .foot{padding:28px 0 110px;font-size:13px;color:#8B8B8F;text-align:center}
+.hi .hibar{position:fixed!important;left:0;right:0;bottom:0;z-index:50;padding:12px 16px calc(12px + env(safe-area-inset-bottom));background:rgba(243,241,236,.94);backdrop-filter:blur(8px);border-top:1px solid var(--line);display:flex;align-items:center;gap:12px;justify-content:center}
+.hi .hibar .p{font-weight:900;font-size:18px;white-space:nowrap}
+.hi .hibar .p s{font-weight:500;font-size:13px;color:#8B8B8F;margin-left:4px}
+.hi .hibar .btn{padding:14px 20px;font-size:16px;max-width:260px}
+.hi .grid,.hi .cards,.hi .list,.hi .shots,.hi .anat,.hi .get,.hi .two,.hi .author,.hi .offer{grid-template-columns:minmax(0,1fr)}
+.hi .grid>*,.hi .w>*{min-width:0}
+.hi .price{flex-wrap:wrap}
+.hi h1,.hi h2,.hi p{overflow-wrap:break-word}
+@media(min-width:860px){
+.hi .hero{padding:64px 0 56px}
+.hi .hero .grid{grid-template-columns:1.02fr 1fr;align-items:center;gap:48px}
+.hi .cards{grid-template-columns:repeat(3,1fr)}
+.hi .list{grid-template-columns:1fr 1fr}
+.hi .shots{grid-template-columns:repeat(3,1fr)}
+.hi .anat{grid-template-columns:repeat(3,1fr)}
+.hi .get{grid-template-columns:1fr 1fr}
+.hi .two{grid-template-columns:1fr 1fr}
+.hi .offer{padding:44px;display:grid;grid-template-columns:1.1fr 1fr;gap:36px;align-items:center}
+.hi .author{grid-template-columns:180px 1fr}
+.hi section{padding:84px 0}
+.hi .hibar{display:none}
+.hi .foot{padding-bottom:40px}
+}
+.hi .hero .grid{gap:20px}
+.hi .hero .art{order:0}
+.hi .proof{display:grid;gap:8px;margin-top:20px;grid-template-columns:minmax(0,1fr)}
+.hi .proof div{display:flex;gap:10px;align-items:baseline;font-size:15px;color:var(--soft);font-weight:600}
+.hi .proof b{font-weight:900;color:var(--ink);font-size:17px;white-space:nowrap}
+.hi .qs{display:grid;gap:12px;margin-top:26px;grid-template-columns:minmax(0,1fr)}
+.hi .q{background:var(--bg);border-radius:18px;padding:18px 20px;border:1px solid var(--line)}
+.hi .q .who{font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--rose)}
+.hi .q .say{font-size:18px;font-weight:800;color:var(--ink);line-height:1.3;margin-top:6px}
+.hi .q .bab{font-size:14.5px;color:#6b6b70;margin-top:8px}
+.hi .easy{display:grid;gap:10px;margin-top:22px;grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+.hi .easy div{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px}
+.hi .easy b{display:block;font-weight:900;font-size:16px;color:var(--ink)}
+.hi .easy span{display:block;font-size:14px;color:#6b6b70;margin-top:3px;line-height:1.4}
+.hi details.bab{margin-top:14px}
+.hi details.bab ol{margin:12px 0 0 20px;display:grid;gap:7px}
+.hi details.bab li{font-size:15.5px;color:var(--soft)}
+.hi details.bab li b{color:var(--ink);font-weight:700}
+@media(min-width:860px){
+.hi .hero .grid{grid-template-columns:1.02fr 1fr;grid-template-areas:"head art" "body art";align-items:center;gap:16px 48px}
+.hi .hero .head{grid-area:head;align-self:end}
+.hi .hero .art{grid-area:art}
+.hi .hero .body{grid-area:body;align-self:start}
+.hi .qs{grid-template-columns:repeat(3,minmax(0,1fr))}
+.hi .easy{grid-template-columns:repeat(4,minmax(0,1fr))}
+}
+</style>
+
+<div class="hi">
+
+<header class="hero"><div class="w grid">
+  <div class="head">
+    <div class="k">E-book + 5 template &nbsp;&middot;&nbsp; oleh Teh Army</div>
+    <h1>Bicara soal uang dengan suami, mertua, dan ipar <mark>tanpa bertengkar</mark>.</h1>
+  </div>
+  <div class="art"><img src="https://raw.githubusercontent.com/buildwithhanif/carousel-assets/main/curhatmuslimah/lp-hak-istri/slide-01.png" alt="Sampul e-book Hak Istri yang Jarang Dikasih Tahu"></div>
+  <div class="body">
+    <p class="lead" style="margin-top:0">11 situasi uang yang paling sering bikin istri memilih diam, dari mahar sampai harta kalau suami meninggal lebih dulu. Tiap situasi ada aturannya, lengkap dengan pasal, dan kalimat lembut yang tinggal kamu pakai.</p>
+    <div class="price"><b>Rp69.000</b><s>Rp99.000</s><span class="tag">Harga perkenalan</span></div>
+    <a class="btn" href="https://lynk.id/muslimahpro/d9o17z8rmv34/checkout">Ambil e-book-nya <span>Rp69rb</span></a>
+    <div class="note">Sekali bayar. File langsung bisa diunduh, bisa dibaca di HP.</div>
+    <div class="proof">
+      <div><b>519 ribu</b><span>pengikut @curhatmuslimah di Instagram</span></div>
+      <div><b>1,1 juta</b><span>kali utas "gelang hadiah lahiran diminta balik" dilihat di Threads</span></div>
+    </div>
+  </div>
+</div></header>
+
+<section class="pain"><div class="w">
+  <div class="k">Pernah dengar kalimat ini?</div>
+  <h2 style="margin-top:12px">Yang bikin kamu diam bukan karena kamu salah. Kamu cuma belum tahu aturannya.</h2>
+  <div class="qs">
+    <div class="q"><div class="who">Mertua</div><div class="say">"Gelang yang Ibu kasih waktu kamu lahiran, Ibu ambil lagi ya."</div><div class="bab">Bab 5: hadiah yang sudah diberikan tetap milikmu.</div></div>
+    <div class="q"><div class="who">Suami</div><div class="say">"Biaya lahiran pakai tabunganmu dulu, nanti aku ganti."</div><div class="bab">Bab 3: siapa yang menanggung, dan cara mencatat talangan.</div></div>
+    <div class="q"><div class="who">Ipar</div><div class="say">"Tabungan almarhum Mas dibagi ke saudara-saudaranya juga."</div><div class="bab">Bab 8: separuh harta bersama hakmu dulu, sebelum waris dibagi.</div></div>
+    <div class="q"><div class="who">Mertua</div><div class="say">"Kambing aqiqah pakai emas maharmu aja."</div><div class="bab">Bab 1: mahar itu milik pribadimu.</div></div>
+    <div class="q"><div class="who">Ipar</div><div class="say">"Pinjam dulu ya, Mbak. Sama keluarga nggak usah dicatat."</div><div class="bab">Bab 6: cara meminjamkan tanpa merusak hubungan.</div></div>
+    <div class="q"><div class="who">Suami</div><div class="say">"Kan STNK-nya atas namaku, ya terserah aku mau dijual."</div><div class="bab">Bab 4: atas nama siapa tidak menentukan.</div></div>
+  </div>
+  <p class="turn">Semua kalimat itu ada jawabannya. Di e-book ini kamu dapat aturannya, dan cara menyampaikannya dengan lembut.</p>
+</div></section>
+
+<section><div class="w">
+  <div class="k">Cara kerjanya</div>
+  <h2 style="margin-top:12px">Tiap bab cuma tiga langkah.</h2>
+  <div class="anat">
+    <div class="an"><i>1</i><div><b>Momennya</b><p>Situasi yang mungkin sedang kamu alami, ditulis apa adanya.</p></div></div>
+    <div class="an"><i>2</i><div><b>Aturannya</b><p>Pasal KHI, UU Perkawinan, atau dalilnya. Nomornya ditulis, jadi kamu bisa cek sendiri.</p></div></div>
+    <div class="an"><i>3</i><div><b>Kalimat siap pakai</b><p>Cara bicara yang lembut ke suami, mertua, atau ipar.</p></div></div>
+  </div>
+  <div class="chat">
+    <div class="lab">Contoh kalimat dari dalam buku</div>
+    <div class="bub">"Bu, gelang ini kenangan dari Ibu. Aku pinjamkan buat adik ya, nanti dikembalikan 10 gram juga."</div>
+    <div class="bub">"Kita catat ya, biar kita berdua sama-sama ingat, bukan biar ada yang disalahin."</div>
+    <div class="bub" style="margin-bottom:0">"Mas, apa pun keputusannya, aku cuma pengen dilibatkan."</div>
+  </div>
+  <div class="easy">
+    <div><b>1 menit</b><span>Ringkasan di awal tiap bab. Baca intinya dulu.</span></div>
+    <div><b>Tanpa bahasa hukum</b><span>Ditulis untuk yang belum pernah baca pasal.</span></div>
+    <div><b>Bisa dicek</b><span>Setiap aturan ada nomor pasal atau dalilnya.</span></div>
+    <div><b>Langsung dipakai</b><span>Unduh hari ini, pakai kalimatnya malam ini.</span></div>
+  </div>
+</div></section>
+
+<section style="background:#fff"><div class="w">
+  <div class="k">Lihat dalamnya</div>
+  <h2 style="margin-top:12px">Bukan e-book teks polos.</h2>
+  <div class="shots">
+    <div class="shot"><img loading="lazy" src="https://raw.githubusercontent.com/buildwithhanif/carousel-assets/main/curhatmuslimah/lp-hak-istri/slide-02.png" alt="Halaman bab e-book"><div><b>Ringkasan 1 menit di tiap bab</b><p>Baca intinya dulu, detailnya kalau kamu butuh.</p></div></div>
+    <div class="shot"><img loading="lazy" src="https://raw.githubusercontent.com/buildwithhanif/carousel-assets/main/curhatmuslimah/lp-hak-istri/slide-03.png" alt="Infografik harta bersama dan waris"><div><b>Infografik yang gampang dipahami</b><p>Harta bersama vs pribadi, dan urutan waris, digambar jelas.</p></div></div>
+    <div class="shot"><img loading="lazy" src="https://raw.githubusercontent.com/buildwithhanif/carousel-assets/main/curhatmuslimah/lp-hak-istri/slide-04.png" alt="Template isian"><div><b>5 template yang bisa diisi</b><p>Langsung di PDF, dicetak, atau lewat file Excel di HP.</p></div></div>
+  </div>
+</div></section>
+
+<section><div class="w">
+  <div class="offer">
+    <div>
+      <div class="k" style="color:var(--blush)">Yang kamu dapat</div>
+      <h2 style="margin-top:12px">Satu kali bayar, semuanya langsung jadi milikmu.</h2>
+      <ul>
+        <li><span><b>E-book edisi A4, 42 halaman.</b> 11 bab full ilustrasi, dengan pasal dan dalil.</span></li>
+        <li><span><b>E-book edisi HP.</b> Ukuran layar ponsel, daftar isinya bisa diklik.</span></li>
+        <li><span><b>5 template Excel.</b> Catatan mahar, daftar harta bersama, dana talangan, pinjaman keluarga, checklist dokumen.</span></li>
+        <li><span><b>20 kalimat siap pakai</b> di dalam buku, untuk suami, mertua, dan ipar.</span></li>
+        <li><span><b>Bonus 20 kartu kalimat.</b> Gambar untuk disimpan di galeri HP.</span></li>
+      </ul>
+    </div>
+    <div>
+      <div class="price"><b>Rp69.000</b><s>Rp99.000</s></div>
+      <p>Harga perkenalan. Sekali bayar, tanpa langganan. File langsung bisa diunduh setelah pembayaran.</p>
+      <a class="btn" href="https://lynk.id/muslimahpro/d9o17z8rmv34/checkout">Ambil e-book-nya sekarang</a>
+    </div>
+  </div>
+  <details class="bab"><summary>Lihat daftar 11 bab</summary>
+    <ol>
+      <li><b>Mahar itu milikmu.</b> Termasuk mahar yang "dihutang dulu".</li>
+      <li><b>Nafkah: siapa menanggung apa.</b> Tetap kewajiban suami walau kamu bekerja.</li>
+      <li><b>Biaya hamil, melahirkan, dan berobat.</b> Talangan vs sedekah, dan cara mencatatnya.</li>
+      <li><b>Harta bersama.</b> Kenapa "atas nama siapa" tidak menentukan.</li>
+      <li><b>Yang tetap milik pribadimu.</b> Harta bawaan, hadiah, dan warisanmu.</li>
+      <li><b>Kalau kamu meminjamkan uang.</b> Ke suami, mertua, atau ipar.</li>
+      <li><b>Tempat tinggal yang layak.</b> Apa kata KHI, dan apa yang tidak.</li>
+      <li><b>Kalau suami meninggal lebih dulu.</b> Hakmu sebelum warisan dibagi.</li>
+      <li><b>Kalau uangmu dibatasi atau dilarang bekerja.</b> Kapan itu termasuk penelantaran.</li>
+      <li><b>Kalau suami punya utang atau pinjol.</b> Mana yang bukan tanggunganmu.</li>
+      <li><b>Perjanjian perkawinan.</b> Yang ternyata bisa dibuat setelah menikah.</li>
+    </ol>
+  </details>
+</div></section>
+
+<section style="padding-top:0"><div class="w">
+  <div class="k">Pertanyaan</div>
+  <h2 style="margin-top:12px">Yang sering ditanyakan</h2>
+  <div class="faq">
+    <details><summary>Apakah ini panduan bercerai?</summary><p>Bukan. E-book ini ditulis untuk bertahan dengan adil: supaya kamu tahu hak dan kewajiban, dan nggak kehilangan hak hanya karena nggak tahu.</p></details>
+    <details><summary>Aku nggak paham hukum. Bakal ngerti nggak?</summary><p>Ditulis untuk pemula. Setiap bab dimulai dengan ringkasan 1 menit dan contoh situasi sehari-hari, baru setelah itu pasalnya.</p></details>
+    <details><summary>Dasar hukumnya apa?</summary><p>Kompilasi Hukum Islam (KHI), UU 1/1974 tentang Perkawinan, dan dalil Al-Qur'an dan hadits. Pasalnya ditulis di setiap bab, jadi kamu bisa cek sendiri. Untuk fiqih, mengikuti mazhab Syafi'i.</p></details>
+    <details><summary>Bagaimana cara mendapatkan filenya?</summary><p>Setelah pembayaran berhasil, file ZIP berisi semua file bisa langsung diunduh dari halaman pembelian dan email konfirmasi. Ekstrak ZIP-nya, lalu buka PDF-nya. Ada edisi khusus HP, dan template Excel bisa dibuka di Google Sheets.</p></details>
+    <details><summary>Apakah ini nasihat hukum untuk kasusku?</summary><p>Bukan. Ini informasi umum. Kalau kamu sedang menghadapi sengketa, hubungi Pengadilan Agama, LBH, atau advokat.</p></details>
+  </div>
+</div></section>
+
+<section style="padding-top:0"><div class="w">
+  <div class="author">
+    <img loading="lazy" src="https://raw.githubusercontent.com/buildwithhanif/carousel-assets/main/curhatmuslimah/lp-hak-istri/slide-05.png" alt="Sampul e-book Hak Istri yang Jarang Dikasih Tahu">
+    <div>
+      <div class="k">Penulis</div>
+      <h2 style="margin-top:8px;font-size:28px">Teh Army</h2>
+      <p style="margin-top:8px">Pengelola @curhatmuslimah, akun dengan lebih dari 500 ribu pengikut tempat para istri berbagi cerita rumah tangga. E-book ini merangkum hak istri yang paling sering ditanyakan, lalu menjawabnya dengan aturan yang berlaku.</p>
+      <a class="btn" style="margin-top:18px" href="https://lynk.id/muslimahpro/d9o17z8rmv34/checkout">Ambil e-book-nya <span>Rp69rb</span></a>
+    </div>
+  </div>
+</div></section>
+
+<div class="foot w">Informasi umum, bukan nasihat hukum untuk kasusmu. &nbsp;&middot;&nbsp; @curhatmuslimah</div>
+
+<div class="hibar"><div class="p">Rp69.000<s>Rp99.000</s></div><a class="btn" href="https://lynk.id/muslimahpro/d9o17z8rmv34/checkout">Ambil sekarang</a></div>
+</div>
